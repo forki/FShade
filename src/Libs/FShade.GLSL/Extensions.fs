@@ -10,7 +10,7 @@ module Backends =
     let glsl410 =
         Backend.Create {
             version                 = Version(4,1)
-            enabledExtensions       = Set.ofList [ ]
+            enabledExtensions       = Set.ofList [ "GL_ARB_sparse_texture2" ]
             createUniformBuffers    = true
             createBindings          = false
             createDescriptorSets    = false
